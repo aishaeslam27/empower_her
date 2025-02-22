@@ -1,0 +1,320 @@
+/* Custom Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #202020;
+}
+
+a {
+    text-decoration: none;
+    color: #5C4033 ;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #96796c; /* brown accent */
+}
+
+/* Navbar */
+.navbar {
+    background: #EBE6E3 ;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    font-size: 26px;
+    font-weight: bold;
+    color:#913831 ;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar nav ul li a {
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 2s 500ms ;
+    color: rgb(69, 66, 57) ;
+}
+
+.navbar nav ul li a:hover {
+    background: #913831;
+}
+
+/* Hero Section (Jumbotron) */
+.hero {
+    background: linear-gradient(rgba(255, 246, 246, 0.586), rgba(255, 246, 246, 0.586)), url('jumbotron2.jpg') top center/cover no-repeat;
+    color: #5C4033;
+    text-align: center;
+    padding: 100px 20px;
+    box-shadow: inset 0 0 50px rgba(135, 134, 134, 0.5);
+}
+
+.hero h1 {
+    font-size: 50px;
+    text-shadow: 2px 2px 8px rgba(236, 179, 151, 0.51);
+    color: #5C4033;
+}
+
+.hero button {
+    background-color:#913831;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #5C4033;
+}
+
+/* Section Titles */
+.section-title {
+    background-color:#EBE6E3 ;
+    font-size: 30px;
+    color: #5C4033;
+    margin-bottom: 40px;
+}
+
+/* Mentor Section (Carousel) */
+.mentor img {
+    width: 400px;
+    border-radius: 10%;
+}
+
+.mentor h3 {
+    margin-top: 20px;
+    color: #3a3a3a;
+}
+
+.mentor p {
+    font-size: 16px;
+    color: #5a4935;
+}
+
+.mentor-carousel .carousel-item {
+    text-align: center;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px;
+    background-color: #EBE6E3;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.contact h2 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #EBE6E3;
+}
+
+.contact form textarea {
+    height: 150px;
+}
+
+.contact form button {
+    background-color:#913831;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+.contact form button:hover {
+    background-color: #5a4935;
+}
+
+/* Footer */
+footer {
+    background: #5a4935;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social-links a {
+    margin: 0 10px;
+    color: #ffffff;
+}
+
+footer .social-links a:hover {
+    color: #913831;
+}
+
+/* Events Section */
+.event-card {
+    margin-bottom: 20px;
+}
+
+.event-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.event-card h3 {
+    font-size: 22px;
+    margin-top: 10px;
+    color: #333;
+}
+
+.event-card p {
+    color: #555;
+}
+
+.event-card .event-date {
+    font-weight: bold;
+    color: #913831;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .mentor-carousel .carousel-item img {
+        width: 80px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .navbar nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* About Us Page Styles */
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    background-color: #b9a396;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.about-us .text-section {
+    flex: 1;
+    padding: 20px;
+    font-size: 18px;
+    color: #333;
+    transition: transform 0.6s ease;
+}
+
+.about-us .text-section h2 {
+    color: #913831;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-align: center;
+    animation: bounceIn 1s ease-in-out;
+}
+
+.about-us .text-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #444;
+    text-align: justify;
+    padding-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.about-us .text-section:hover {
+    transform: scale(1.05);
+    color: #d16e67; /* Fun color change */
+}
+
+.about-us .photo-section {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.about-us .photo-section img {
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease-in-out;
+}
+
+.about-us .photo-section img:hover {
+    transform: rotate(10deg);
+}
+
+.about-us .fun-quote {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 20px;
+    color: #d16e67;
+    font-style: italic;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: translateY(-1000px);
+    }
+    60% {
+        transform: translateY(30px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries for About Us Page */
+@media (max-width: 768px) {
+    .about-us {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-us .photo-section {
+        margin-bottom: 30px;
+    }
+
+    .about-us .text-section p {
+        font-size: 1rem;
+    }
+}
+
+
